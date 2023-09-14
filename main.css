@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(188, 180, 180);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #0c0101;
+    margin-bottom: 56px;
+    background-color: rgb(98, 88, 88);
+    color: #ffff;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #ffff;
+
+}
+
+.menu li:hover {
+    border-color: rgb(142, 107, 107);
+}
+
+.sobre-a-loja {
+    margin-bottom: 56px;
+    display: flex;
+}
+
+.sobre-a-loja img {
+    width: 500px;
+    height: 300px;
+    padding: 0 16px;
+    margin-right: 20px;
+} 
+
+.sobre-a-loja h2{
+    border-bottom:  3px solid #0c0101;
+    width: 500px;
+    padding: 16px 0;
+}
+
+.sobre-a-loja  p{
+    margin: 16px 0;
+}
+
+article img {
+    width: 220px;
+    height: 220px;
+}
+
+section h2 {
+    border-bottom:  3px solid #0c0101;
+    padding: 16px 0;
+    margin-bottom: 20px;
+}
+
+.roupas {
+    display: grid;
+    grid-template-columns:  repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.roupa h1{
+    margin: 6px 0;
+    font-size: 29px;
+}
+
+.roupa button {
+    background-color: rgb(45, 57, 46);
+    color: #ffff;
+    padding: 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 59px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .sobre-a-loja{
+        display: block;
+        align-items: center;
+    }
+    .sobre-a-loja img{
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+    }
+    .roupas {
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 40%)
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+    .roupas {
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 40%)
+    }
+}
+
